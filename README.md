@@ -1,20 +1,25 @@
 # Api de controle de tarefas e produtividade
 
-##Descrição
+## Descrição
 
 
-##Baixando o repositório
+## Baixando o repositório
 
 
-##Pré-requisitos
+## Pré-requisitos
 
-##Contribuindo com o projeto
-
-
-##Autores
+## Contribuindo com o projeto
 
 
-##Licença
+## Autores
+
+- Iann Vitor Souza de Lima
+- José Vinícius Alves Teixeira
+- Luciano Tomé Ferreira Correia Chaves
+- Mário Antônio Carvalho Fragoso Filho
+- Marcus Antônio Teti Cavalcanti Gomes
+
+## Licença
 
   Creative Commons Legal Code
 
