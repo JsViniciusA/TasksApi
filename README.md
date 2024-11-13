@@ -18,6 +18,7 @@
 - Luciano Tomé Ferreira Correia Chaves
 - Mário Antônio Carvalho Fragoso Filho
 - Marcus Antônio Teti Cavalcanti Gomes
+- Yuki Peterson William S. Araujo
 
 ## Licença
 
