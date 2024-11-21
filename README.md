@@ -2,6 +2,7 @@
 
 ## Descrição
 
+O projeto inclui uma RESTful API construída usando javascript e os frameworks Node.js e Express.js. Tal Api tem o objetivo do gerenciamento de tarefas e produtividade, contendo requisições para adicionar, remover, atualizar e buscar tarefas através do seu id , além de permitir a categorização das atividades. Além da personalização de tarefas, o usuário poderá se cadastrar e editar seu perfil, se tiver interesse.  
 
 ## Baixando o repositório
 
@@ -9,6 +10,7 @@
 ## Pré-requisitos
 
 ## Contribuindo com o projeto
+
 
 
 ## Autores
