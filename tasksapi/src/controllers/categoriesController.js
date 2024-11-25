@@ -1,59 +1,43 @@
-import CategoryRepository from '../models/categoriesModel.js';
-
-import { Category, User } from './models/index.js';
-
-
-const router = express.Router();
+import express from 'express';
+import Categories from '../models/categoriesModel.js';
+export { Categories };
 
 
-router.post('/categories', async (req, res) => {
-  try {
-    const { name, userId } = req.body;
-    const category = await Category.create({ name, userId });
-    res.status(201).json(category);
-  } catch (err) {
-    res.status(400).json({ error: 'Erro ao criar categoria', details: err });
+
+function findAll(req, res) {
+  TaskRepository.findAll().then((result) => res.json(result));
+}
+
+function findCategoria(req, res) {
+  TaskRepository.findByPk(req.params.id)
+      .then((result) => res.json(result))
+}
+
+async function addCategoria(req, res) {
+  const categoria= req.body;
+  const categoriaCriada = await this.categoriaUseCase.cadastrar(categoria);
+  return res.status(201).json(categoriaCriada);
+};
+
+
+async function updateCategoria(req,res){
+  await TaskRepository.update({
+      nome: req.body.nome
+  },
+  {
+      where: {
+        id: req.params.id
   }
-});
+  })};
 
-router.get('/users/:userId/categories', async (req, res) => {
-  try {
-    const { userId } = req.params;
-    const categories = await Category.findAll({ where: { userId } });
-    res.json(categories);
-  } catch (err) {
-    res.status(400).json({ error: 'Erro ao buscar categorias', details: err });
-  }
-});
+  async function deleteCategoria(req,res){
+      await TasksRepository.destroy({
+          where: {
+            id: req.params.id
+          }
+        });
+  
+      UserRepository.findAll().then((result) => res.json(result));
+  };
 
-
-router.put('/categories/:id', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const { name } = req.body;
-    const category = await Category.findByPk(id);
-    if (!category) return res.status(404).json({ error: 'Categoria não encontrada' });
-    category.name = name;
-    await category.save();
-    res.json(category);
-  } catch (err) {
-    res.status(400).json({ error: 'Erro ao atualizar categoria', details: err });
-  }
-});
-
-
-router.delete('/categories/:id', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const category = await Category.findByPk(id);
-    if (!category) return res.status(404).json({ error: 'Categoria não encontrada' });
-    await category.destroy();
-    res.status(204).send();
-  } catch (err) {
-    res.status(400).json({ error: 'Erro ao deletar uma categoria', details: err });
-  }
-});
-
-module.exports = router;
-
-export default { findAll, addCategory, findCategory, updateCategory, deleteCategory } 
+export default { findAll, addCategoria, findCategoria, updateCategoria, deleteCategoria } 
