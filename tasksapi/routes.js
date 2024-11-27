@@ -1,7 +1,7 @@
 import express from 'express';
-import userRoutes from './usersRoutes.js';
-import taskRoutes from './tasksRoutes.js';
-import categoryRoutes from './categoriesRoutes.js';
+import userRoutes from './src/routers/usersRoutes.js';
+import taskRoutes from './src/routers/tasksRoutes.js';
+import categoryRoutes from './src/routers/categoriesRoutes.js';
 
 const routes = express.Router();
 
