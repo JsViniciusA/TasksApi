@@ -14,11 +14,13 @@ Para baixar o repositório na sua máquina, faça o clone do repositório usando
 Programas instalados:
 - Node.js(versao mínima 18.20.5, como demonstra a foto abaixo);
 
-  ![Screenshot_20241203-162827](https://github.com/user-attachments/assets/d79e290b-4d91-4f71-a4c2-235ef6874d55)
+![Captura de tela 2024-12-03 174501](https://github.com/user-attachments/assets/cd5ef360-5f59-472b-90dc-09d72290d1fb)
+
 
 - MySQL Workbench 8.0(como exemplificado na foto abaixo);
 
-  ![Screenshot_20241203-163543](https://github.com/user-attachments/assets/37adadbb-7229-42b5-9a6d-b96f8df2a5cf)
+![Captura de tela 2024-12-03 174704](https://github.com/user-attachments/assets/d256e443-989f-4468-a799-f52d1d61f4f1)
+
 
 
 - Express.js(instalado com o npm, como demonstrado na foto abaixo);
