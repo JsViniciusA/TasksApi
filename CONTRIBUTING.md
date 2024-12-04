@@ -17,7 +17,7 @@ Programas instalados:
   ![Captura de tela 2024-12-03 170118](https://github.com/user-attachments/assets/4baf407a-6ebb-4bf5-b068-8b0ca4f7b623)
 
 ### Ferramentas e materiais utilizados
-Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf
+Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf(./tasksdocs/ferramentas_materiais.pdf)
    
    
 
@@ -30,4 +30,4 @@ Após clonarem o repositório utilizando git clone, os membros do grupo podem e 
 Usuários que se interessarem em colaborar com o código do projeto, poderão fazer um fork do repositório(git fork), e realizarem as implementações desejadas. Após finalizadas as implementações,comitadas(git commit -m "mensagem da alteracao") e enviadas(git push -u origin develop), os usuários devem abrir um pull request no qual os colaboradores do repositório podem ou não aceitar a mesclagem.
 
 ### Tutorial de trabalho
-Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo tutorial_git.pdf
+Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo tutorial_git.pdf(./tasksdocs/Tutorial_git.pdf)
