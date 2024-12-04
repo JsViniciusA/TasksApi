@@ -16,6 +16,9 @@ Programas instalados:
 
   ![Captura de tela 2024-12-03 170118](https://github.com/user-attachments/assets/4baf407a-6ebb-4bf5-b068-8b0ca4f7b623)
 
+### Ferramentas e materiais utilizados
+Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf
+   
    
 
 # Contribuição do repositório:
