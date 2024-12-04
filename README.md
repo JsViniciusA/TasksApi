@@ -27,11 +27,17 @@ Programas instalados:
 
   ![Captura de tela 2024-12-03 170118](https://github.com/user-attachments/assets/4baf407a-6ebb-4bf5-b068-8b0ca4f7b623)
 
+
+### Ferramentas e materiais utilizados
+Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf
    
+
 
 ## Contribuindo com o projeto
 Para contribuir com o projeto, faça um fork do repositório e altere como achar necessário. Após realizar as alteraçõs desejadas, pode fazer a solicitação do seu Pull Request, que um dos colaboradores do repositório irá fazer a mesclagem da sua alteração. Mais detalhes de como contribuir com o projeto estão no arquivo CONTRIBUTING.md
 
+### Tutorial de trabalho
+Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo Tutorial_git.pdf
 
 
 ## Autores
