@@ -42,4 +42,3 @@ async function deleteUser(req,res){
 };
 
 export default { findAll, addUser, findUser, updateUser, deleteUser } 
-

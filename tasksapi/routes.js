@@ -1,12 +1,12 @@
 import express from 'express';
-import users from './src/controllers/users.js';
+import userRoutes from './src/routers/usersRoutes.js';
+import taskRoutes from './src/routers/tasksRoutes.js';
+import categoryRoutes from './src/routers/categoriesRoutes.js';
 
 const routes = express.Router();
 
-routes.get('/users',users.findAll);
-routes.get('/users/:id',users.findClient);
-routes.put('/users/:id',users.updateClient);
-routes.delete('/users/:id',users.deleteClient);
-routes.post('/users', users.addClient);
+routes.use('/users', userRoutes);
+routes.use('/tasks', taskRoutes);
+routes.use('/categories', categoryRoutes);
 
-export { routes as default };
+export default routes;
