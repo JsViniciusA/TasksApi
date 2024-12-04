@@ -36,6 +36,7 @@ Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no
 ## Contribuindo com o projeto
 Para contribuir com o projeto, faça um fork do repositório e altere como achar necessário. Após realizar as alteraçõs desejadas, pode fazer a solicitação do seu Pull Request, que um dos colaboradores do repositório irá fazer a mesclagem da sua alteração. Mais detalhes de como contribuir com o projeto estão no arquivo CONTRIBUTING.md
 
+
 ### Tutorial de trabalho
 Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo Tutorial_git.pdf
 
