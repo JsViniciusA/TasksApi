@@ -29,7 +29,7 @@ Programas instalados:
 
 
 ### Ferramentas e materiais utilizados
-Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf
+Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf( ./tasksdocs/ferramentas_materiais.pdf)
    
 
 
@@ -38,7 +38,7 @@ Para contribuir com o projeto, faça um fork do repositório e altere como achar
 
 
 ### Tutorial de trabalho
-Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo Tutorial_git.pdf
+Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo Tutorial_git.pdf ( ./taskdocs/Tutorial_git.pdf)
 
 
 ## Autores
