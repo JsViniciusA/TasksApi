@@ -30,4 +30,6 @@ Após clonarem o repositório utilizando git clone, os membros do grupo podem e 
 Usuários que se interessarem em colaborar com o código do projeto, poderão fazer um fork do repositório(git fork), e realizarem as implementações desejadas. Após finalizadas as implementações,comitadas(git commit -m "mensagem da alteracao") e enviadas(git push -u origin develop), os usuários devem abrir um pull request no qual os colaboradores do repositório podem ou não aceitar a mesclagem.
 
 ### Tutorial de trabalho
+
 Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo tutorial_git.pdf(./tasksdocs/Tutorial_git.pdf)
+
