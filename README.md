@@ -1,62 +1,162 @@
-# Api de controle de tarefas e produtividade
+# API de Controle de Tarefas e Produtividade
 
 ## Descrição
 
-O projeto inclui uma RESTful API construída usando javascript e os frameworks Node.js e Express.js. Tal Api tem o objetivo do gerenciamento de tarefas e produtividade, contendo requisições para adicionar, remover, atualizar e buscar tarefas através do seu id , além de permitir a categorização das atividades. Além da personalização de tarefas, o usuário poderá se cadastrar e editar seu perfil, se tiver interesse.  
+Este projeto consiste em uma RESTful API construída com Java e o framework Spring Boot. A API tem como objetivo gerenciar tarefas e melhorar a produtividade dos usuários, permitindo:
 
-## Baixando o repositório
-Para baixar o repositório na sua máquina, faça o clone do repositório usando git clone https://github.com/JsViniciusA/TasksApi.git, ou pode baixar o arquivo .zip do projeto e abrir em uma ferramenta de edição de código de sua preferência.
+- Adicionar, remover, atualizar e buscar tarefas pelo ID.
+
+- Categorizar tarefas para organização eficiente.
+
+- Personalizar tarefas conforme necessidade do usuário.
+
+- Cadastrar e editar o perfil de usuários.
+
+
+## Baixando o Repositório
+
+Para obter o código do projeto em sua máquina, siga as instruções:
+
+1. Faça o clone do repositório usando o comando:
+
+git clone https://github.com/JsViniciusA/TasksApi.git
+
+
+2. Alternativamente, baixe o arquivo .zip do projeto diretamente do GitHub e extraia o conteúdo.
+
+
+3. Abra o projeto em uma IDE de sua preferência, como IntelliJ IDEA ou Eclipse.
+
+
 
 
 ## Pré-requisitos
-Programas instalados:
 
+### Programas necessários:
 
-- MySQL Workbench 8.0(como exemplificado na foto abaixo);
+- Java JDK 17 ou superior.
 
-![Captura de tela 2024-12-03 174704](https://github.com/user-attachments/assets/d256e443-989f-4468-a799-f52d1d61f4f1)
+- Maven para gerenciar dependências (geralmente integrado à IDE).
 
-
-
-### Ferramentas e materiais utilizados
-Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf( ./tasksdocs/ferramentas_materiais.pdf)
-   
-
-
-## Contribuindo com o projeto
-Para contribuir com o projeto, faça um fork do repositório e altere como achar necessário. Após realizar as alteraçõs desejadas, pode fazer a solicitação do seu Pull Request, que um dos colaboradores do repositório irá fazer a mesclagem da sua alteração. Mais detalhes de como contribuir com o projeto estão no arquivo CONTRIBUTING.md
-
-Exemplo de Pull Request:
-
-![Screenshot_1](https://github.com/user-attachments/assets/a5b20518-3013-4482-affd-f3fc8caf9de8)
+- MySQL Workbench 8.0 (ou ferramenta similar para gerenciar o banco de dados).
 
 
 
-### Tutorial de trabalho
-Para mais informações de comandos git que podem e devem ser usados durante a colaboração, visualizar o arquivo Tutorial_git.pdf ( ./taskdocs/Tutorial_git.pdf)
+
+### Ferramentas e Materiais Utilizados
+
+As ferramentas, bibliotecas e frameworks utilizados estão detalhados no arquivo ferramentas_materiais.pdf.
+
+
+
+### Configurando o Ambiente
+
+Passos para Configuração
+
+1. Clone o repositório para sua máquina:
+
+git clone https://github.com/JsViniciusA/TasksApi.git
+cd TasksApi
+
+
+2. Configure o banco de dados:
+
+Acesse o MySQL Workbench ou terminal e crie o banco de dados:
+
+CREATE DATABASE nome_do_banco;
+
+
+
+3. Configure o arquivo application.properties:
+
+No diretório src/main/resources, edite o arquivo application.properties com as credenciais do banco de dados:
+
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/nome_do_banco
+spring.datasource.username=usuario
+spring.datasource.password=senha
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+
+
+4. Compile o projeto e baixe as dependências:
+
+mvn clean install
+
+
+5. Inicie o servidor:
+
+mvn spring-boot:run
+
+
+6. Teste a API no Swagger:
+
+Acesse o Swagger UI no navegador:
+
+http://localhost:8080/swagger-ui.html
+
+
+
+
+
+## Contribuindo com o Projeto
+
+Para contribuir, siga as etapas:
+
+1. Faça um fork do repositório.
+
+
+2. Crie uma nova branch para sua alteração:
+
+git checkout -b minha-feature
+
+
+3. Após realizar as alterações desejadas, envie suas mudanças:
+
+git add .
+git commit -m "Minha contribuição"
+git push origin minha-feature
+
+
+4. Abra um Pull Request no GitHub para revisão.
+
+
+
+Mais informações sobre como contribuir estão no arquivo CONTRIBUTING.md.
+
+
+
+### Tutorial de Trabalho com Git
+
+Para comandos Git e boas práticas de colaboração, consulte o arquivo Tutorial_git.pdf.
+
 
 
 ## Autores
 
 - Iann Vitor Souza de Lima
+
 - José Vinícius Alves Teixeira
+
 - Luciano Tomé Ferreira Correia Chaves
+
 - Mário Antônio Carvalho Fragoso Filho
+
 - Marcus Antônio Teti Cavalcanti Gomes
+
 - Yuki Peterson William S. Araujo
+
+
 
 ## Licença
 
-  Creative Commons Legal Code
+Creative Commons Legal Code - CC0 1.0 Universal
 
-CC0 1.0 Universal
-
-    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
-    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
-    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
-    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
-    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
-    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
-    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
-    HEREUNDER.
-    Work.
+CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+HEREUNDER.
