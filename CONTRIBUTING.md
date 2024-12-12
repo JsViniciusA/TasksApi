@@ -1,20 +1,43 @@
 ## Descrição
 
-O projeto inclui uma RESTful API construída usando javascript e os frameworks Node.js e Express.js. Tal Api tem o objetivo do gerenciamento de tarefas e produtividade, contendo requisições para adicionar, remover, atualizar e buscar tarefas através do seu id , além de permitir a categorização das atividades. Além da personalização de tarefas, o usuário poderá se cadastrar e editar seu perfil, se tiver interesse.  
+Este projeto consiste em uma RESTful API construída com Java e o framework Spring Boot. A API tem como objetivo gerenciar tarefas e melhorar a produtividade dos usuários, permitindo:
 
-## Baixando o repositório
-Para baixar o repositório na sua máquina, faça o clone do repositório usando git clone https://github.com/JsViniciusA/TasksApi.git, ou pode baixar o arquivo .zip do projeto e abrir em uma ferramenta de edição de código de sua preferência.
+- Adicionar, remover, atualizar e buscar tarefas pelo ID.
 
-![Captura de tela editada](https://github.com/user-attachments/assets/6ce8bbe0-0837-420c-bbd6-4dedef71e627)
+- Categorizar tarefas para organização eficiente.
+
+- Personalizar tarefas conforme necessidade do usuário.
+
+- Cadastrar e editar o perfil de usuários.
+
+
+## Baixando o Repositório
+
+Para obter o código do projeto em sua máquina, siga as instruções:
+
+1. Faça o clone do repositório usando o comando:
+
+git clone https://github.com/JsViniciusA/TasksApi.git
+
+
+2. Alternativamente, baixe o arquivo .zip do projeto diretamente do GitHub e extraia o conteúdo.
+
+
+3. Abra o projeto em uma IDE de sua preferência, como IntelliJ IDEA ou Eclipse.
+
+
 
 
 ## Pré-requisitos
-Programas instalados:
-- Node.js(versao mínima 18.20.5, como demonstra a foto abaixo);
-- MySQL Workbench 8.0(como exemplificado na foto abaixo);
-- Express.js(instalado com o npm, como demonstrado na foto abaixo);
 
-  ![Captura de tela 2024-12-03 170118](https://github.com/user-attachments/assets/4baf407a-6ebb-4bf5-b068-8b0ca4f7b623)
+### Programas necessários:
+
+- Java JDK 17 ou superior.
+
+- Maven para gerenciar dependências (geralmente integrado à IDE).
+
+- MySQL Workbench 8.0 (ou ferramenta similar para gerenciar o banco de dados).
+
 
 ### Ferramentas e materiais utilizados
 Para mais informações sobre as ferramentas, bibliotecas e frameworks usados no projeto, visualizar o arquivo ferramentas_materiais.pdf(./tasksdocs/ferramentas_materiais.pdf)
