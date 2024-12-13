@@ -33,15 +33,35 @@ git clone https://github.com/JsViniciusA/TasksApi.git
 ## Pré-requisitos
 
 ### Programas necessários:
-PostgreSQL (instalado e configurado)
+- PostgreSQL (instalado e configurado)
+
+  ![image](https://github.com/user-attachments/assets/7deec811-9df9-4436-b570-26e64b23ca7e)
+
+
 
 - Java 17 (ou superior)
 
+  ![image](https://github.com/user-attachments/assets/7bf49ae8-a433-402d-a70f-f90f01e0e0b0)
+
+
+
 - Spring Boot
+
+  ![image](https://github.com/user-attachments/assets/28de0544-99fa-49cc-8445-bbd73b3f1764)
+
+
 
 - Swagger (Postman ou ferramenta similar para testar a API)
 
+  ![image](https://github.com/user-attachments/assets/a67ad5d2-bb8e-4aeb-a4f2-26547678ed5b)
+
+
+
 - Git (para controle de versão)
+
+  ![image](https://github.com/user-attachments/assets/255c51fe-171e-4a18-8d4e-025a989c6d4e)
+
+
 
 
 
@@ -63,6 +83,7 @@ CREATE DATABASE tasksapi;
 
 CREATE USER api_user WITH PASSWORD 'sua_senha';
 GRANT ALL PRIVILEGES ON DATABASE tasksapi TO api_user;
+
 
 
 
@@ -89,6 +110,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 
 
+
 #### Executando o Projeto
 
 1. Compile e rode o projeto Use sua IDE para executar o projeto ou utilize o terminal:
@@ -104,7 +126,9 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 
 
+
 ### Estrutura do Projeto
+
 
 #### Principais Tecnologias e Frameworks Utilizados:
 
@@ -117,6 +141,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 - Spring Data JPA (para manipulação do banco de dados)
 
 - Lombok (para reduzir código boilerplate)
+
 
 
 
