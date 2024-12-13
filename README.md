@@ -33,68 +33,90 @@ git clone https://github.com/JsViniciusA/TasksApi.git
 ## Pré-requisitos
 
 ### Programas necessários:
+PostgreSQL (instalado e configurado)
 
-- Java JDK 17 ou superior.
+- Java 17 (ou superior)
 
-- Maven para gerenciar dependências (geralmente integrado à IDE).
+- Spring Boot
 
-- MySQL Workbench 8.0 (ou ferramenta similar para gerenciar o banco de dados).
+- Swagger (Postman ou ferramenta similar para testar a API)
 
-
-
-
-### Ferramentas e Materiais Utilizados
-
-As ferramentas, bibliotecas e frameworks utilizados estão detalhados no arquivo ferramentas_materiais.pdf.
+- Git (para controle de versão)
 
 
 
-### Configurando o Ambiente
 
-Passos para Configuração
+### Configurando o Banco de Dados PostgreSQL
 
-1. Clone o repositório para sua máquina:
+1. Instale o PostgreSQL
 
-git clone https://github.com/JsViniciusA/TasksApi.git
-cd TasksApi
-
-
-2. Configure o banco de dados:
-
-Acesse o MySQL Workbench ou terminal e crie o banco de dados:
-
-CREATE DATABASE nome_do_banco;
+Baixe e instale o PostgreSQL na página oficial.
 
 
 
-3. Configure o arquivo application.properties:
+2. Crie o banco de dados Acesse o terminal do PostgreSQL (ou um gerenciador como pgAdmin) e crie um banco de dados para o projeto:
 
-No diretório src/main/resources, edite o arquivo application.properties com as credenciais do banco de dados:
+CREATE DATABASE tasksapi;
 
-spring.datasource.url=jdbc:mysql://127.0.0.1:3306/nome_do_banco
-spring.datasource.username=usuario
-spring.datasource.password=senha
+
+3. Configuração do usuário e permissões Verifique se você possui um usuário configurado para o banco e dê as permissões necessárias. Por exemplo:
+
+CREATE USER api_user WITH PASSWORD 'sua_senha';
+GRANT ALL PRIVILEGES ON DATABASE tasksapi TO api_user;
+
+
+
+
+### Configurando o Projeto
+
+1. Crie o arquivo .env Na raiz do projeto, crie um arquivo .env com as configurações de conexão com o PostgreSQL:
+
+DB_NAME=tasksapi
+DB_USER=api_user
+DB_PASSWORD=sua_senha
+DB_HOST=localhost
+DB_PORT=5432
+
+
+2. Configuração no application.properties O projeto utiliza o Spring Boot, e as configurações de banco estão no arquivo src/main/resources/application.properties. Certifique-se de que ele contém:
+
+spring.datasource.url=jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+spring.datasource.username=${DB_USER}
+spring.datasource.password=${DB_PASSWORD}
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 
 
-4. Compile o projeto e baixe as dependências:
 
-mvn clean install
+#### Executando o Projeto
 
+1. Compile e rode o projeto Use sua IDE para executar o projeto ou utilize o terminal:
 
-5. Inicie o servidor:
-
-mvn spring-boot:run
+./mvnw spring-boot:run
 
 
-6. Teste a API no Swagger:
+2. Teste a API Abra o Postman ou outra ferramenta de requisição HTTP e teste os endpoints disponíveis. Por exemplo:
 
-Acesse o Swagger UI no navegador:
+- GET: http://localhost:8080/tasks
 
-http://localhost:8080/swagger-ui.html
+- POST: http://localhost:8080/tasks/add
 
+
+
+### Estrutura do Projeto
+
+#### Principais Tecnologias e Frameworks Utilizados:
+
+- Java 17
+
+- Spring Boot
+
+- PostgreSQL (banco de dados)
+
+- Spring Data JPA (para manipulação do banco de dados)
+
+- Lombok (para reduzir código boilerplate)
 
 
 
